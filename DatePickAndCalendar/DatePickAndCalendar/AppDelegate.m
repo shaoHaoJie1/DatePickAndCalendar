@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import "ViewController.h"
+
+#import "DatePickViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +20,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    ViewController *view=  [[ViewController alloc]init];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:view];
+    
+    [self.window makeKeyAndVisible];
+ 
     return YES;
 }
 
