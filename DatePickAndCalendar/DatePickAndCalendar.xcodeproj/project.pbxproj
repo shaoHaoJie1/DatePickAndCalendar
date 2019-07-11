@@ -16,6 +16,9 @@
 		C695B2A522CAEA4100E9E8D8 /* DatePickAndCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C695B2A422CAEA4100E9E8D8 /* DatePickAndCalendarTests.m */; };
 		C695B2B022CAEA4100E9E8D8 /* DatePickAndCalendarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C695B2AF22CAEA4100E9E8D8 /* DatePickAndCalendarUITests.m */; };
 		C695B2BF22CAFBD200E9E8D8 /* DatePickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C695B2BE22CAFBD200E9E8D8 /* DatePickViewController.m */; };
+		C695B2C222CB4F2700E9E8D8 /* CustomdatePickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C695B2C122CB4F2700E9E8D8 /* CustomdatePickViewController.m */; };
+		C695B2C622CB4FB800E9E8D8 /* CustomDatePicekView.m in Sources */ = {isa = PBXBuildFile; fileRef = C695B2C522CB4FB800E9E8D8 /* CustomDatePicekView.m */; };
+		C695B2C922D6D7D800E9E8D8 /* UIButton+ChickBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C695B2C822D6D7D800E9E8D8 /* UIButton+ChickBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		C695B2B122CAEA4100E9E8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C695B2BD22CAFBD200E9E8D8 /* DatePickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickViewController.h; sourceTree = "<group>"; };
 		C695B2BE22CAFBD200E9E8D8 /* DatePickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickViewController.m; sourceTree = "<group>"; };
+		C695B2C022CB4F2700E9E8D8 /* CustomdatePickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomdatePickViewController.h; sourceTree = "<group>"; };
+		C695B2C122CB4F2700E9E8D8 /* CustomdatePickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomdatePickViewController.m; sourceTree = "<group>"; };
+		C695B2C422CB4FB800E9E8D8 /* CustomDatePicekView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomDatePicekView.h; sourceTree = "<group>"; };
+		C695B2C522CB4FB800E9E8D8 /* CustomDatePicekView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomDatePicekView.m; sourceTree = "<group>"; };
+		C695B2C722D6D7D800E9E8D8 /* UIButton+ChickBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ChickBlock.h"; sourceTree = "<group>"; };
+		C695B2C822D6D7D800E9E8D8 /* UIButton+ChickBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ChickBlock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,9 @@
 				C695B28F22CAEA4000E9E8D8 /* ViewController.m */,
 				C695B2BD22CAFBD200E9E8D8 /* DatePickViewController.h */,
 				C695B2BE22CAFBD200E9E8D8 /* DatePickViewController.m */,
+				C695B2C022CB4F2700E9E8D8 /* CustomdatePickViewController.h */,
+				C695B2C122CB4F2700E9E8D8 /* CustomdatePickViewController.m */,
+				C695B2C322CB4F4E00E9E8D8 /* CustomdatePickView */,
 				C695B29122CAEA4000E9E8D8 /* Main.storyboard */,
 				C695B29422CAEA4100E9E8D8 /* Assets.xcassets */,
 				C695B29622CAEA4100E9E8D8 /* LaunchScreen.storyboard */,
@@ -135,6 +147,17 @@
 				C695B2B122CAEA4100E9E8D8 /* Info.plist */,
 			);
 			path = DatePickAndCalendarUITests;
+			sourceTree = "<group>";
+		};
+		C695B2C322CB4F4E00E9E8D8 /* CustomdatePickView */ = {
+			isa = PBXGroup;
+			children = (
+				C695B2C422CB4FB800E9E8D8 /* CustomDatePicekView.h */,
+				C695B2C522CB4FB800E9E8D8 /* CustomDatePicekView.m */,
+				C695B2C722D6D7D800E9E8D8 /* UIButton+ChickBlock.h */,
+				C695B2C822D6D7D800E9E8D8 /* UIButton+ChickBlock.m */,
+			);
+			path = CustomdatePickView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +292,10 @@
 			files = (
 				C695B29022CAEA4000E9E8D8 /* ViewController.m in Sources */,
 				C695B29B22CAEA4100E9E8D8 /* main.m in Sources */,
+				C695B2C222CB4F2700E9E8D8 /* CustomdatePickViewController.m in Sources */,
 				C695B28D22CAEA4000E9E8D8 /* AppDelegate.m in Sources */,
+				C695B2C922D6D7D800E9E8D8 /* UIButton+ChickBlock.m in Sources */,
+				C695B2C622CB4FB800E9E8D8 /* CustomDatePicekView.m in Sources */,
 				C695B2BF22CAFBD200E9E8D8 /* DatePickViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

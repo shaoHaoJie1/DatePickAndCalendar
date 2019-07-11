@@ -10,9 +10,9 @@
 
 #import "DatePickViewController.h"
 
+#import "CustomdatePickViewController.h"
+
 @interface ViewController ()
-
-
 
 
 @end
@@ -24,8 +24,7 @@
   
     self.view.backgroundColor = [UIColor whiteColor];
     NSArray *titlearray =  @[@"datePick",@"CustomdatePick",@"calendar"];
-    
-    
+  
     for (int i = 0; i<3; i++) {
         
         UIButton *btn =[[UIButton alloc]initWithFrame:CGRectMake(100, 100*i+100, 150, 32)];
@@ -38,44 +37,43 @@
         [btn setBackgroundColor:[UIColor brownColor]];
         [btn addTarget:self action:@selector(chicBtn:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:btn];
-        
-        
+      
     }
-    
-    
-    
 }
 
 -(void)chicBtn:(UIButton *)btn{
 
-    
-    
     switch (btn.tag) {
         case 1000:{
             
-            DatePickViewController *date = [[DatePickViewController alloc]init];
+        DatePickViewController *date = [[DatePickViewController alloc]init];
           
-            [self.navigationController pushViewController:date animated:YES];
-            
-         
-       
+        [self.navigationController pushViewController:date animated:YES];
         }
         break;
+        case 1001:{
             
-        case 1001:
+        CustomdatePickViewController *custom = [[CustomdatePickViewController alloc]init];
             
-        break;
+        [self.navigationController pushViewController:custom animated:YES];
+        }
+        break;{
+                
+                
+                
+        }
+        case 1002:{
             
-        case 1002:
             
-        break;
+        }
+        break;{
+                
+        }
+        default:{
             
-        default:
-            
+        }
         break;
     }
     
 }
-
-
 @end
