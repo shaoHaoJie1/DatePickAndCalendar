@@ -20,10 +20,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+//测试修改上传
     
      self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
+
     ViewController *view=  [[ViewController alloc]init];
     self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:view];
     
